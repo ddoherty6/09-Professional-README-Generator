@@ -8,12 +8,12 @@ const questions = [
     {
         type: 'input',
         name: 'name',
-        message: 'What is your name?',
+        message: 'Please enter your name:',
         validate: nameInput => {
             if (nameInput) {
                 return true;
             } else {
-                console.log("Please enter your name");
+                console.log("Please enter your name:");
                 return false;
             }
         }
@@ -21,32 +21,80 @@ const questions = [
     {
         type: 'input',
         name: 'github',
-        message: 'Enter your GitHub Username:'
+        message: 'Enter your GitHub username:',
+        validate: githubInput => {
+            if (githubInput) {
+                return true;
+            } else {
+                console.log("Please enter your GitHub username");
+                return false;
+            }
+        }
     },
     {
         type: 'input',
         name: 'email',
-        message: 'Enter your Email address:'
+        message: 'Enter your Email address:',
+        validate: emailInput => {
+            if (emailInput) {
+                return true;
+            } else {
+                console.log("Please enter your Email address:");
+                return false;
+            }
+        }
     },
     {
         type: 'input',
         name: 'title',
-        message: 'What is the title of your project?'
+        message: 'Please enter project title:',
+        validate: titleInput => {
+            if (titleInput) {
+                return true;
+            } else {
+                console.log("Please enter project title:");
+                return false;
+            }
+        }
     },
     {
         type: 'input',
         name: 'description',
-        message: 'Please provide a description of your project:'
+        message: 'Please enter project description:',
+        validate: descriptionInput => {
+            if (descriptionInput) {
+                return true;
+            } else {
+                console.log("Please enter project description:");
+                return false;
+            }
+        }
     },
     {
         type: 'input',
         name: 'installation',
-        message: 'Please provide installation instructions for your application:'
+        message: 'Please provide installation instructions for your application:',
+        validate: installationInput => {
+            if (installationInput) {
+                return true;
+            } else {
+                console.log("Please provide installation instructions for your application:");
+                return false;
+            }
+        }
     },
     {
         type: 'input',
         name: 'usage',
-        message: 'Please explain how to use your application:'
+        message: 'Please explain how to use your application:',
+        validate: usageInput => {
+            if (usageInput) {
+                return true;
+            } else {
+                console.log("Please explain how to use your application:");
+                return false;
+            }
+        }
     },
     {
         type: 'checkbox',
@@ -57,12 +105,28 @@ const questions = [
     {
         type: 'input',
         name: 'contributing',
-        message: 'Please provide guidelines for how others can contribute to this project:'
+        message: 'Please provide guidelines for how others can contribute to this project:',
+        validate: contributingInput => {
+            if (contributingInput) {
+                return true;
+            } else {
+                console.log("Please provide guidelines for how others can contribute to this project:");
+                return false;
+            }
+        }
     },
     {
         type: 'input',
         name: 'tests',
-        message: 'Please instructions on how to test your application:'
+        message: 'Please instructions on how to test your application:',
+        validate: testsInput => {
+            if (testsInput) {
+                return true;
+            } else {
+                console.log("Please instructions on how to test your application:");
+                return false;
+            }
+        }
     }
 ];
 
