@@ -1,60 +1,38 @@
 # Professional README Generator
 
-When creating an open source project on GitHub, it’s important to have a high-quality README for the app. This should include what the app is for, how to use the app, how to install it, how to report issues, and how to make contributions&mdash;this last part increases the likelihood that other developers will contribute to the success of the project. 
+This application creates a high-quality README for your app! This should include what the app is for, how to use the app, how to install it, how to report issues, and how to make contributions. You can quickly and easily generate a README file by using a command-line application to generate one. This allows the project creator to devote more time working on the project.
 
-You can quickly and easily generate a README file by using a command-line application to generate one. This allows the project creator to devote more time working on the project.
+## Installation
 
-Your task is to create a command-line application that dynamically generates a professional README.md file from a user's input using the [Inquirer package](https://www.npmjs.com/package/inquirer). Review the [Guide to a Professional README](https://github.com/coding-boot-camp/potential-enigma/blob/master/readme-guide.md) as a reminder of everything that a high-quality, professional README should contain. 
+The application depends on node.js. Make sure you have node.js installed before continuing.
 
-The application will be invoked by using the following command:
+Clone this GitHub repository to a directory. From there, at the root of the directory run the following:
+
+```
+npm install
+```
+
+Required dependencies are logged for npm to install, so this command is all you need to get started!
+
+## Usage
+
+To use, run the following command:
 
 ```
 node index.js
 ```
 
-Because this application won’t be deployed, you’ll also need to provide a link to a walkthrough video that demonstrates its functionality. Revisit 2.2.4: Screencastify Tutorial in Module 2 of the **prework** as a refresher on how to record video from your computer. You’ll need to submit a link to the video **and** add it to the README of your project.
+A few notes:
 
-Before you start, clone the [starter code](https://github.com/coding-boot-camp/potential-enigma).
+- You must enter information for every field. The application will continue to prompt you for information until something is entered, with the following exception:
+    - When selecting a license, you may choose no selections or only one. If you choose multiple selections, the prompt will reset until one or zero license are chosen.
+- When the application finishes prompting you, it will give you confirmation of successful generation of your new file, README.md - navigate to the /dist/ directory to find this file
+- If you decide to run the application again, the file /dist/README.md will be destructively overwritten. Please make sure to save it in a different directory if you wish to keep it.
 
-## User Story
-
-```
-AS A developer
-I WANT a README generator
-SO THAT I can quickly create a professional README for a new project
-```
-
-## Acceptance Criteria
-
-```
-GIVEN a command-line application that accepts user input
-WHEN I am prompted for information about my application repository
-THEN a high-quality, professional README.md is generated with the title of my project and sections entitled Description, Table of Contents, Installation, Usage, License, Contributing, Tests, and Questions
-WHEN I enter my project title
-THEN this is displayed as the title of the README
-WHEN I enter a description, installation instructions, usage information, contribution guidelines, and test instructions
-THEN this information is added to the sections of the README entitled Description, Installation, Usage, Contributing, and Tests
-WHEN I choose a license for my application from a list of options
-THEN a badge for that license is added near the top of the README and a notice is added to the section of the README entitled License that explains which license the application is covered under
-WHEN I enter my GitHub username
-THEN this is added to the section of the README entitled Questions, with a link to my GitHub profile
-WHEN I enter my email address
-THEN this is added to the section of the README entitled Questions, with instructions on how to reach me with additional questions
-WHEN I click on the links in the Table of Contents
-THEN I am taken to the corresponding section of the README
-```
+Please see the following video demonstration:
 
 ## Getting Started
 
-Here are some guidelines to help you get started:
-
-* Create a `.gitignore` file and include `node_modules/` and `.DS_Store/` so that your `node_modules` directory isn't tracked or uploaded to GitHub. Be sure to create your `.gitignore` file before installing any npm dependencies.
-
-* Make sure that your repo includes a `package.json` with the required dependencies. You can create one by running `npm init` when you first set up the project, before installing any dependencies.
-
-* Include a video of the typical user flow through your application. This includes views of the prompts and the responses after their selection.
-
-* Include any other screenshots you deem necessary to help someone who has never been introduced to your application understand the purpose and function of it. This is how you will communicate to potential employers or other developers in the future what you built and why, and to show how it works.
 
 
 ## Review

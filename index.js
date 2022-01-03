@@ -99,7 +99,7 @@ const questions = [
     {
         type: 'checkbox',
         name: 'license',
-        message: 'Which license applies to this project? Please check exactly one box:',
+        message: 'Which license applies to this project? Please check only one box:',
         choices: ['Apache License 2.0', 'Boost', 'BSD 2-Clause', 'BSD 3-Clause', 'CC0', 'EPL', 'GPL v3', 'GPL v2', 'MIT', 'Mozilla Public License 2.0', 'ISC'],
         validate: licenseInput => {
             if (licenseInput.length <= 1) {
@@ -142,7 +142,7 @@ function init() {
    askQuestions(questions)
    .then(data => generateMarkdown(data))
    .then(markdown => makeReadMe(markdown))
-   .then(resolve => console.log(resolve.ok, resolve.message))
+   .then(resolve => console.log(resolve.message))
    .catch(err => console.log(err));
 }
 
