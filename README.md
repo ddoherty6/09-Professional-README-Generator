@@ -29,9 +29,7 @@ A few notes:
 - When the application finishes prompting you, it will give you confirmation of successful generation of your new file, README.md - navigate to the /dist/ directory to find this file
 - If you decide to run the application again, the file /dist/README.md will be destructively overwritten. Please make sure to save it in a different directory if you wish to keep it.
 
-Please see the following video demonstration:
-
-
+Please see [video demonstration](https://watch.screencastify.com/v/Fnda6kTLU0pGtFkHkK1J) for more info
 
 ## Development
 
