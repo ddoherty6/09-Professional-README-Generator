@@ -31,16 +31,11 @@ A few notes:
 
 Please see the following video demonstration:
 
-## Getting Started
 
 
+## Development
 
-## Review
+Development was compartmentalized into 3 modules, with a fourth, index.js, written with the questions and then the init function to run the promise chain that drives the application. userInput.js just includes the implementation of inquirer. makeReadMe.js simply takes the markdown generated elsewhere and writes it to a file. generateMarkdown.js does the heavy lifting, actually creating the markdown to be written to the README.md file using template literals.
 
-You are required to submit the following for review:
+I used links created by GutHib user lukas-h to procedurally generate the license badges in the generated file. Please find that repo [here](https://gist.github.com/lukas-h/2a5d00690736b4c3a7ba)
 
-* A walkthrough video demonstrating the functionality of the application.
-
-* A sample README.md file for a project repository generated using your application.
-
-* The URL of the GitHub repository. Give the repository a unique name and include a README describing the project.
